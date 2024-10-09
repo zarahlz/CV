@@ -102,6 +102,8 @@
     \vspace{-2.4mm}
 }
 
+
+
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 
 % \renewcommand{\labelitemii}{$\circ$}
@@ -126,9 +128,9 @@
 \newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
 \newcolumntype{C}{>{\centering\arraybackslash}X}%
 
-\newcommand{\customfooter}[1]{
-  \fancyfoot[L]{\scriptsize \color{black}{#1}}
-  \fancyfoot[R]{\color{black}{Page \thepage}}     % Right-aligned page number
+\newcommand{\customfooter}[2]{  % Add second parameter for second line of the footer
+  \fancyfoot[L]{\footnotesize \color{black}{#1}}     % Left-aligned custom text
+  \fancyfoot[R]{\footnotesize \color{black}{Page \thepage}} % Right-aligned page number
   \renewcommand{\footrulewidth}{0.4pt} % Footrule thickness
   \fancyheadoffset[L,R]{5pt} % Ensure the rule extends to page edges
   \renewcommand{\footrule}{\color{MidnightBlue}\hrule width \textwidth height \footrulewidth} % Full-width footrule in MidnightBlue
@@ -164,156 +166,205 @@
 
 \section{{\textbf{Research Interests}}}
 
-    \resumeItemListStart
+  \vspace{-0.5mm}
+
+    \resumeSubHeadingListStart
         \begin{multicols}{2}
             \resumeItem{Data Structures \& Algorithms}{}
-            \resumeItem{Microprocessor Design \& Architecture}{}
-            \resumeItem{ASIC/FPGA Design}{}
-            \resumeItem{VLSI Design}{}
-
+            \vspace{-3.5mm}
+            \resumeItem{Microprocesso Design \& Architecture}{}
+            \vspace{-3.5mm}
+            \resumeItem{FPGA \& VLSI Circuit Design}{}
+            \vspace{-3.5mm}
+            \resumeItem{Dara Science}{}
+            \vspace{-3.5mm}
+            \resumeItem{Machine Learning}{}
+            \vspace{-3.5mm}
+            \resumeItem{IoT Systems}{}
         \end{multicols}
-        \vspace*{2.0\multicolsep}
-    \resumeItemListEnd
+    \resumeSubHeadingListEnd
 
-\vspace{-6mm}
+\vspace{-10.5mm}
 
 
 %-----------EDUCATION-----------
 \section{\textcolor{MidnightBlue}{\textbf{Education}}}
+
+  \vspace{-0.5mm}
+
   \resumeSubHeadingListStart
     \resumeSubheading
       {Sharif University of Technology}{Cumulative Average: 16.32/20}
-      {Bachelor’s Degree in Electrical Engineering, Major in Digital Systems}{Ongoing}
-    \resumeSubheading
+      {Bachelor’s Degree in Electrical Engineering, Major in Digital Systems}{2021 - Present}
+      
+      \vspace{-1.5mm}
+
+      \resumeSubheading
       {Farzanegan's School of Development of Exceptional Talents}{Cumulative Average: 19.45/20}
       {Post Graduate Diploma in Mathematics and Physics}{2018 -- 2021}
   \resumeSubHeadingListEnd
 
-\vspace{-8mm}
+\vspace{-8.5mm}
 
 
-%-----------PROJECTS-----------------
-\section{{\textbf{Projects}}}
+%-----------RESEARCH EXPERIENCE-----------------
+\section{{\textbf{Research Experience}}}
   \resumeSubHeadingListStart
 
+    \vspace{-0.5mm}
+
     \resumeSubheading
-      {Hardware Optimization for Large Language Models}{}
-      {Hardware Optimizer}{Ongoing}
-      \vspace{-3.0mm}
+      {Hardware Optimization for Large Language Models}{\textit{Fall 2024 - Present}}
+      {Hardware Optimizer}{\textcolor{MidnightBlue}{\href{https://scholar.google.com/citations?user=8HsoXAUAAAAJ&hl=en}{Prof. B. Khalaj}}}
+      \vspace{-2.0mm}
       \resumeItemListStart
-        \item {Developing advanced techniques to optimize hardware for large language models on systems with limited memory capacity. Focused on efficient parameter storage and dynamic memory management to enable execution of models larger than available memory. The project aims to enhance inference speed and resource utilization on constrained systems.}
+        \item {Developing techniques for hardware optimization in large language models.}
+        \item {Focusing on efficient parameter storage and dynamic memory management.}
+        \item {Enabling execution of models larger than available memory.}
+        \item {Enhancing inference speed and resource utilization on constrained systems.}
       \resumeItemListEnd
     
-
-    \vspace{-3.5mm}
+    \vspace{-4.5mm}
 
     \resumeSubheading
-      {Design \& Implementation of Field Programmable Gate Array}{}
-      {Hardware Designer}{Ongoing}
-      \vspace{-3.0mm}
+      {Design \& Implementation of Field Programmable Gate Arrays}{\textit{Summer 2024 - Present}}
+      {Hardware Designer}{\textcolor{MidnightBlue}{\href{https://scholar.google.com/citations?user=PkLFUfkAAAAJ&hl=en}{Prof. A. Fotowat}}}
+      \vspace{-2.0mm}
       \resumeItemListStart
-        \item {Designing and implementing FPGA chip layouts, focusing on key components such as configurable logic blocks, connection blocks, and switch boxes. Responsible for optimizing performance, resource utilization, and routing efficiency in line with technical specifications. Also exploring innovative digital design techniques, power efficiency strategies, and dynamic reconfiguration to enhance the overall FPGA architecture.}
+        \item {Designing FPGA layouts focusing on configurable logic blocks and connection blocks.}
+        \item {Optimizing routing efficiency and resource utilization in line with technical specifications.}
+        \item {Exploring innovative digital design techniques for power efficiency.}
+        \item {Implementing dynamic reconfiguration strategies to enhance FPGA architecture.}
       \resumeItemListEnd
 
-  \resumeSubHeadingListEnd
-\vspace{-10mm}
+      \vspace{-4.5mm}
 
+      \resumeSubheading
+      {Real-Time IoT Video Streaming System}{\textit{Summer 2024 - Present}}
+      {Linux Developer}{\textcolor{MidnightBlue}{\href{https://scholar.google.com/citations?user=8HsoXAUAAAAJ&hl=en}{Prof. B. Khalaj}}}
+      \vspace{-2.0mm}
+      \resumeItemListStart
+        \item {Developed a video streaming system for security cameras using FFmpeg, GStreamer, and OpenCV.}
+        \item {Implemented face recognition algorithms for real-time detection and identification.}
+        \item {Built an RTSP framework to capture and stream low-latency video feeds.}
+        \item {Conducted performance testing to ensure reliability and efficiency in IoT settings.}
+      \resumeItemListEnd    
+    
+  \resumeSubHeadingListEnd
+\vspace{-12mm}
 
 %-----------COURSE PROJECTS-----------------
-\section{{\textbf{Course Projects}}}
+\section{{\textbf{Related Coursework}}}
   \resumeSubHeadingListStart
 
+    \vspace{-0.5mm}
+
     \resumeSubheading
-      {Parallel Algorithm Design \& Programming}{}
-      {CUDA Developer}{Spring 2024}
+      {Parallel Algorithm Design \& Programming}{\textit{Spring 2024}}
+      {CUDA Developer}{\textcolor{MidnightBlue}{\href{https://scholar.google.com/citations?user=kCBJNHwAAAAJ&hl=en}{Prof. M. Hashemi}}}
       \vspace{-2.0mm}
       \resumeItemListStart
-        \item {Enhanced expertise in high-performance computing by designing and implementing parallel algorithms using CUDA in the Parallel Architecture and Programming course. Focused on optimizing computational efficiency and developing scalable solutions for data-intensive tasks.}
+        \item {Designed and implemented parallel algorithms using CUDA for high-performance computing.}
+        \item {Optimized computational efficiency for data-intensive tasks.}
+        \item {Developed scalable solutions within the framework of parallel architecture.}
       \resumeItemListEnd
 
-    \vspace{-3.5mm}
+    \vspace{-4.5mm}
     
     \resumeSubheading
-      {Signal Processing on FPGA Systems}{}
-      {Digital Signal Processing Contributor}{Spring 2024}
+      {Signal Processing on FPGA Systems}{\textit{Spring 2024}}
+      {Digital Signal Processing Contributor}{\textcolor{MidnightBlue}{\href{https://scholar.google.ca/citations?user=lWSKYd4AAAAJ&hl=en}{Prof. M. Shabany}}}
       \vspace{-2.0mm}
       \resumeItemListStart
-        \item {Completed a complex FPGA/ASIC system design project, generating and processing signals on a Zynq platform. Gained comprehensive knowledge of digital communication protocols and signal processing techniques.}
+        \item {Designed an FPGA/ASIC system for signal generation and processing on a Zynq platform.}
+        \item {Gained expertise in digital communication protocols and signal processing techniques.}
+        \item {Enhanced understanding of FPGA implementation in signal applications.}
       \resumeItemListEnd
     
-    \vspace{-3.5mm}
+    \vspace{-4.5mm}
     
     \resumeSubheading
-      {Performance Optimization Algorithms \& Programming}{}
-      {Microprocessor Systems Contributor}{Spring 2024}
+      {Performance Optimization Algorithms \& Programming}{\textit{Spring 2024}}
+      {Microprocessor Systems Contributor}{\textcolor{MidnightBlue}{\href{https://www.researchgate.net/profile/Mohammad-Movahedin}{Prof. M. Movahedin}}}
       \vspace{-2.0mm}
       \resumeItemListStart
-        \item {Optimized matrix multiplication code in C for the Design of Microprocessor Systems course, employing advanced techniques such as pointer manipulation, cache optimization, and parallel processing with OpenMP to enhance performance.}
-      \resumeItemListEnd
-
-    \vspace{-3.5mm}
-    
-    \resumeSubheading
-      {Digital Signal Analysis}{}
-      {Data Analyst}{Spring 2023}
-      \vspace{-2.0mm}
-      \resumeItemListStart
-        \item {Applied advanced MATLAB techniques in EEG signal analysis during the Signals and Systems course. Extracted key insights from EEG data, aiding in the understanding of brain activity and identifying unique brainwave patterns.}
-      \resumeItemListEnd
-    
-    \vspace{-3.5mm}
-    
-    \resumeSubheading
-      {Web Development \& Application Programming}{}
-      {Full-Stack Developer}{Spring 2022}
-      \vspace{-2.0mm}
-      \resumeItemListStart
-        \item {Developed full-stack web applications in the Object-Oriented Programming course, creating responsive interfaces with HTML and CSS. Built a Java-based messaging application with SQL integration for efficient data handling and user communication.}
+        \item {Optimized matrix multiplication in C using advanced techniques.}
+        \item {Employed pointer manipulation and cache optimization for enhanced performance.}
+        \item {Utilized parallel processing with OpenMP to increase computational speed.}
       \resumeItemListEnd
 
-    \vspace{-3.5mm}
+    \vspace{-4.5mm}
     
     \resumeSubheading
-      {Game Development \& Graphical Programming}{}
-      {C++ and SDL Developer}{Fall 2021}
+      {Digital Signal Analysis}{\textit{Spring 2023}}
+      {Data Analyst}{\textcolor{MidnightBlue}{\href{https://scholar.google.com/citations?user=bLuKrjgAAAAJ&hl=en}{Prof. H. Aghajan}}}
       \vspace{-2.0mm}
       \resumeItemListStart
-        \item {Mastered game development in C++ during the Programming Fundamentals course, utilizing SDL for multimedia handling. Demonstrated proficiency in creating interactive gaming experiences by integrating audiovisual components with OpenGL and Direct3D.}
+        \item {Conducted EEG signal analysis using advanced MATLAB techniques.}
+        \item {Extracted insights to understand brain activity and identify unique brainwave patterns.}
+        \item {Aided in the interpretation of complex neurological data.}
       \resumeItemListEnd
+    
+    \vspace{-4.5mm}
+    
+    \resumeSubheading
+      {Web Development \& Application Programming}{\textit{Spring 2022}}
+      {Full-Stack Developer}{\textcolor{MidnightBlue}{\href{https://scholar.google.com/citations?user=8hv_HpKBHhoC&hl=en}{Prof. B. Vahdat}}}
+      \vspace{-2.0mm}
+      \resumeItemListStart
+        \item {Developed full-stack web applications with responsive interfaces using HTML and CSS.}
+        \item {Built a Java-based messaging application with SQL integration for efficient data management.}
+        \item {Enhanced user communication through effective back-end design.}
+      \resumeItemListEnd
+
+    \vspace{-4.5mm}
+
+    \customfooter{}{}
+    \clearpage
 
   \resumeSubHeadingListEnd
 \vspace{-10mm}
 
-% Usage example
-\customfooter{}{}
+%-----------COURSE PROJECTS-----------------
+\section{{\textbf{Related Coursework (Continued)}}}
+  \resumeSubHeadingListStart
 
-\clearpage
+    \vspace{-0.5mm}
+    
+    \resumeSubheading
+      {Game Development \& Graphical Programming}{\textit{Fall 2021}}
+      {C++ and SDL Developer}{\textcolor{MidnightBlue}{\href{https://scholar.google.com/citations?user=8hv_HpKBHhoC&hl=en}{Prof. B. Vahdat}}}
+      \vspace{-2.0mm}
+      \resumeItemListStart
+        \item {Mastered game development in C++ using SDL for multimedia handling.}
+        \item {Created interactive gaming experiences by integrating audiovisual components.}
+        \item {Demonstrated proficiency with OpenGL and Direct3D for graphical rendering.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-12mm}
 
 %-----------EXPERIENCE-----------------
-\section{{\textbf{Experience}}}
+\section{{\textbf{Technical Experience}}}
   \resumeSubHeadingListStart
 
-    \resumeSubheading
-      {Real-Time Video Streaming Development}{}
-      {Linux Developer}{Summer 2024}
-      \vspace{-2.0mm}
-      \resumeItemListStart
-        \item {Developed a comprehensive RTSP streaming solution using FFmpeg, GStreamer, VLC, and OpenCV. Established an RTSP server with MediaMTX, facilitating real-time streaming of webcam feeds. Optimized streaming pipelines to enhance video quality and minimize latency, significantly improving real-time video communication.}
-      \resumeItemListEnd
-
-    \vspace{-4.0mm}
+    \vspace{-0.5mm}
 
     \resumeSubheading
-      {Web Development \& Front-End Programming}{}
-      {Front-End Developer}{Fall 2023}
+      {Web Development \& Front-End Programming}{\textit{Fall 2023}}
+      {Front-End Developer}{\textcolor{MidnightBlue}{\href{http://react-sut.com/}{ReACT 2024}}}
       \vspace{-2.0mm}
       \resumeItemListStart
-        \item {Contributed to the technical team for ReACT 2024, developing a dynamic website using Django, Python, and JavaScript. Implemented interactive features to enhance user engagement, playing a key role in the conference's success with over 500 international participants.}
+        \item {Developed a dynamic website for ReACT 2024 using Django and JavaScript.}
+        \item {Implemented features to enhance user engagement.}
+        \item {Contributed to the success of a conference with 500+ participants.}
+        \item {Collaborated with teams for seamless design integration.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
-\vspace{-10mm}
+\vspace{-12mm}
+
 
 %-----------Relevant Courses-----------------
 \section{{\textbf{Relevant Courses}}}
@@ -323,8 +374,10 @@
     {}{} 
     \vspace{-6.0mm}
     \resumeItemListStart
-        \item {Machine Learning: Ongoing \hfill \textit{Spring 2025}}
-        \item {Artificial Intelligence: Ongoing \hfill \textit{Fall 2024}}
+        \item {Machine Learning: N \hfill \textit{Fall 2024}}
+        \item {Artificial Intelligence: N \hfill \textit{Fall 2024}}
+        \item {Dara Science: A \hfill \textit{Fall 2024}}
+        \item {Large Language Model: A \hfill \textit{Summer 2024}}
     \resumeItemListEnd
 
 \vspace{-4.0mm}
@@ -333,9 +386,9 @@
     {}{} 
     \vspace{-6.0mm}
     \resumeItemListStart
-        \item {VLSI Design$^{\dagger}$: Ongoing \hfill \textit{Fall 2024}}
-        \item {Computer Interface Circuits$^{\dagger}$: Ongoing \hfill \textit{Fall 2024}}
-        \item {Advanced Copmuter Architecture$^{\dagger}$: Ongoing \hfill \textit{Fall 2024}}
+        \item {VLSI Design$^{\dagger}$: N \hfill \textit{Fall 2024}}
+        \item {Computer Interface Circuits$^{\dagger}$: N \hfill \textit{Fall 2024}}
+        \item {Microprocessor Systems Lab: N \hfill \textit{Spring 2024}}
         \item {ASIC/FPGA Systems Lab: 19.1/20 \hfill \textit{Spring 2024}}
         \item {ASIC/FPGA System Design: 15.8/20 \hfill \textit{Spring 2024}}
         \item {Microprocessor Systems Design: 17/20 \hfill \textit{Spring 2024}}
@@ -357,49 +410,45 @@
 
 \resumeSubHeadingListEnd
 
-\vspace{-10mm}
+\vspace{-11.5mm}
 
 %-----------Positions of Responsibility-----------------
-\section{{\textbf{Positions of Responsibility}}}
+\section{{\textbf{Teaching Experience}}}
   \resumeSubHeadingListStart
 
     \resumeSubheading{Computer Architecture \& Microprocessor Course}{} 
-    {Teaching Assistant}{Fall 2023, Spring 2024, Fall 2024} 
+    {Teaching Assistant}{Fall 2023 - Present} 
     \vspace{-2.0mm}
     \resumeItemListStart
-      \item {Designed and graded homework assignments, as well as midterm and final exams. Provided guidance to students in understanding complex architectural concepts and assisted with problem-solving during office hours.}
+      \item {Graded assignments, midterms, and finals, assisted in laboratory sessions. \hfill \footnotesize \textcolor{MidnightBlue}{\textit{\href{https://scholar.google.de/citations?user=nR98aV4AAAAJ&hl=en}{Prof. S. Bagheri}}}}
+      \item {Designed and graded assignments, graded lab assignments. \hfill \footnotesize \textcolor{MidnightBlue}{\textit{\href{https://scholar.google.com/citations?user=gJkJ9wUAAAAJ&hl=en}{Prof. E. Cheshmikhani}}}}
+      \item {Graded quizzes, assisted students with problem-solving. \hfill \footnotesize \textcolor{MidnightBlue}{\textit{\href{https://www.researchgate.net/profile/Mohammad-Movahedin}{Prof. M. Movahedin}}}}
     \resumeItemListEnd
 
     \vspace{-4.0mm}
     
     \resumeSubheading{Logical Circuits \& Digital Systems Course}{} 
-    {Teaching Assistant}{Fall 2023, Fall 2024} 
+    {Teaching Assistant}{Fall 2023 - Present} 
     \vspace{-2.0mm}
     \resumeItemListStart
-      \item {Designed and graded homework assignments and quizzes. Facilitated learning by answering student inquiries and helping them grasp the fundamental principles of logical circuits.}
+      \item {Designed and graded homework assignments and quizzes. \hfill \footnotesize \textcolor{MidnightBlue}{\textit{\href{http://link_to_prof_movahedin.com}{Prof. M. Movahedin}}}}
+      \item {Assisted in laboratory and graded lab assignments. \hfill \footnotesize \textcolor{MidnightBlue}{\textit{\href{https://www.researchgate.net/profile/Mahmoud-Tabandeh}{Prof. M. Tabandeh}}}}
     \resumeItemListEnd
 
     \vspace{-4.0mm}
 
     \resumeSubheading{Basic Programming Course}{} 
-    {Teaching Assistant}{Fall 2024} 
+    {Teaching Assistant}{Fall 2024 - Present} 
     \vspace{-2.0mm}
     \resumeItemListStart
-      \item {Designed quizzes and exams, graded them, and assisted students in understanding key programming concepts. Addressed student questions and supported their progress in mastering basic programming skills.}
+      \item {Designed and graded quizzes and exams. \hfill \footnotesize \textcolor{MidnightBlue}{\textit{\href{https://scholar.google.com/citations?user=FWnadoAAAAAJ&hl=en}{Prof. A. Abrishami}}}}
     \resumeItemListEnd
 
     \vspace{-4.0mm}
 
-    \resumeSubheading{Engineering Mathematics Course}{} 
-    {Teaching Assistant}{Fall 2023} 
-    \vspace{-2.0mm}
-    \resumeItemListStart
-      \item {Graded homework assignments, providing constructive feedback to enhance student understanding of mathematical concepts. Actively engaged with students by answering questions and offering additional support to clarify challenging topics.}
-    \resumeItemListEnd
-
   \resumeSubHeadingListEnd
 
-\vspace{-10mm}
+\vspace{-7.5mm}
 
 
 %-----------SKILLS-----------------
@@ -410,50 +459,49 @@
     \vspace{-1.0mm}
   \resumeSubHeadingListEnd
 
-  \vspace{-6.0mm}
+  \vspace{-7.0mm}
 
   \resumeSubHeadingListStart
     \resumePOR{Web Development: }{HTML, CSS, JavaScript, Django}{}
     \vspace{-1.0mm}
   \resumeSubHeadingListEnd
 
-  \vspace{-6.0mm}
+  \vspace{-7.0mm}
 
   \resumeSubHeadingListStart
     \resumePOR{Database Management: }{mySQL, PostgreSQL}{}
     \vspace{-1.0mm}
   \resumeSubHeadingListEnd
 
-  \vspace{-6.0mm}
+  \vspace{-7.0mm}
 
   \resumeSubHeadingListStart
     \resumePOR{Hardware Description Languages: }{VHDL, Verilog}{}
     \vspace{-1.0mm}
   \resumeSubHeadingListEnd
 
-  \vspace{-6.0mm}
+  \vspace{-7.0mm}
 
   \resumeSubHeadingListStart
     \resumePOR{Operating Systems: }{Windows, Linux}{}
     \vspace{-1.0mm}
   \resumeSubHeadingListEnd
 
-  \vspace{-6.0mm}
+  \vspace{-7.0mm}
 
   \resumeSubHeadingListStart
     \resumePOR{Technical Skills: }{Microsoft Office, LaTeX}{}
     \vspace{-1.0mm}
   \resumeSubHeadingListEnd
 
-  \vspace{-6.0mm}
+  \vspace{-7.0mm}
 
   \resumeSubHeadingListStart
     \resumePOR{Languages: }{Advanced English, Native Persian}{}
     \vspace{-1.0mm}
   \resumeSubHeadingListEnd
   
-% Usage example
-\customfooter{$\dagger$: Graduate Course}
+\customfooter{$\dagger$: Graduate Course \hspace{10mm} N: Not available \hspace{10mm} A: Audited}
 
 \clearpage
 
